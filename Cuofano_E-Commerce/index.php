@@ -1,13 +1,13 @@
 <!--Giancarmine Cuofano-->
 <!--Qinta Ainf 2013/14--> 	
 <!------------------------------------------------------------------------------------
-Questa pagina invierÃ  una richiesta tramite il server per sapere la lingua del browser,
+Questa pagina invierà una richiesta tramite il server per sapere la lingua del browser,
 in base alla risposta:
 -Se Italiano:	IT/index.php
 -Se Spagnolo:	ES/Index.php
 -Se Inglese:	EN/Index.php
 
-	*In qualunque altro caso si verrÃ  rindirizzati alla versione del sito in inglese 
+	*In qualunque altro caso si verrà rindirizzati alla versione del sito in inglese 
 	 contenuto in EN/Index.php
 	 
 					##NON VERRA' VISUALIZZATO NULLA LATO CLIENT##

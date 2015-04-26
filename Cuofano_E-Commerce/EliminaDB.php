@@ -11,13 +11,13 @@
 <BODY>
 	<?php
 		//----------------------------------------------------------------------------
-		// Se il Web Server non Ã¨ attivo, la procedura Ã¨ interrotta
+		// Se il Web Server non è attivo, la procedura è interrotta
 		$ServerSQL = MySQL_connect("127.0.0.1","root","") or die ("Non connesso");
 
 			//----------------------------------------------------------------------------
 		//  Verifico prima se il DB esiste		
 		if ( MySQL_select_db ("Cuofano_ECommerce", $ServerSQL) )
- 		{	print ("Il Data Base 'Cuofano_ECommerce' verrÃ  cancellato.<br>");
+ 		{	print ("Il Data Base 'Cuofano_ECommerce' verrà cancellato.<br>");
 			MySQL_query ("DROP DATABASE Cuofano_ECommerce");
 		    print ("Data Base 'Cuofano_ECommerce' ELIMINATO!<br>");
 	    }

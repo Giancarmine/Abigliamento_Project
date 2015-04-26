@@ -1,0 +1,166 @@
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+}
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+body {background: #181818 url(img/darkGreyBackground.jpg) no-repeat top center;font: .81em/150%  Arial, Helvetica, sans-serif;color: #666;}
+a {color: #666;text-decoration: none;outline: none;font-weight:bold;/* animation */-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+a:hover {color:#fff;}
+
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+#logo {float:left; display:block;  padding:25px; font-size:22px;}
+
+
+/************************************************************************************
+MAIN NAVIGATION
+*************************************************************************************/
+nav{float:right; margin:5px 20px 0 0}
+#main-nav {margin:17px 0 0 0;list-style: none;padding:0;}
+#main-nav li {float:left; margin:0;padding:0 0 0 9px;}
+#main-nav li:first-child {margin-left: 5px;}
+#main-nav a {float:left;display:block;padding:4px 10px 7px 3px;text-decoration:none;text-transform:uppercase;font-family:arial;font-size:12px;font-weight:bold;color:#666;}
+#main-nav a:hover {color: #fff;}
+
+#header #current a {background:000;color: #fff;}
+
+/************************************************************************************
+HOME
+*************************************************************************************/
+
+#header	{float:left;  width:100%; background: url(img/bg-header.png);box-shadow: 0 1px 3px rgba(34,25,25,0.4); -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4); -webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);}
+
+/*** Filtri 1 2 3 ***/		
+#options{float:left; width:100%;}
+#filters{width: 220px;height:50px;margin:0 auto;}
+#filters li	{display:inline-block;margin:0 2px 0 0;padding:0;width:40px;}
+#filters li	a{ width:44px; height:50px; display:block;margin:0;position:relative;text-transform:capitalize; text-decoration:none }
+
+	#f-all{background:url("img/all.png") no-repeat center center;}
+	#f-one{background:url("img/one.png") no-repeat center top;}
+	#f-two{background:url("img/two.png") no-repeat center top;}
+	#f-three{background:url("img/three.png") no-repeat center top;}
+	
+	a#f-one:hover{background:url("img/one.png") no-repeat  center bottom;}
+	a#f-two:hover{background:url("img/two.png") no-repeat  center bottom;}
+	a#f-three:hover{background:url("img/three.png") no-repeat center bottom;}
+	
+	
+	#filters a span{background: url("img/tooltip.png") no-repeat center center;color:#fff;font-size:11px;font-family:arial; font-weight:bold;top:-10px;position:absolute;opacity: 0;width:100%;text-align:center;padding: 0px 2px 2px 2px;
+	/* animation */-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+
+	#filters li a:hover span {opacity: 1;}
+	.selected{background-position: bottom !important}
+	.selected span{opacity: 1 !important}
+	
+#iso-content{float:left; width:100%;margin: 0px;}
+
+.element {width: 230px;overflow:hidden;margin: 5px;float: left;position: relative;background: #111;color: #222;box-shadow: 0 1px 3px #111; -moz-box-shadow: 0 1px 2px  #111; -webkit-box-shadow: 0 1px 3px  #111;}
+.element.one{height:150px;}
+.element.two{height:175px;}
+.element.three{height:200px;}
+
+.element img{margin-bottom:-5px; -webkit-transition: all 0.50s ease-out;-moz-transition: all 0.50s ease-out;-o-transition: all 0.50s ease-out;-ms-transition: all 0.50s ease-out;transition: all 0.50s ease-out;}
+.element .icon{position:absolute;z-index:12; left:10px; font-size:20px; top:7px;  width:10px; height:10px;display:block;  }
+
+/*** etichette ***/
+.element .one{color: #00ff65; }
+.element .two{color: #00fffe;}
+.element .three{color: #ff0099;}
+
+	.element .text-el{position:absolute; overflow:hidden; z-index:11; background: url(img/bg-header.png); color:#545454;bottom:0;width:200px; height:25px; padding: 8px 0 0px 30px;display:block;margin:0; 
+	/* animation */transition: height ease-in-out 300ms;-o-transition: height ease-in-out 300ms;-moz-transition: height ease-in-out 300ms;-webkit-transition: height ease-in-out 300ms;}
+  
+  	.element .text-el h1{margin:0;padding:0; font-size:13px;color:#fff;}
+  	.element .text-el p{font-weight: normal;margin-top:4px;color:#fff;}
+
+ 	.element a:hover .text-el{height: 100px; /* height = total height of A and P child elements */}
+ 	.element a:hover img{opacity:0.2}
+
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footer {
+	clear: both;
+	color: #333;
+	font-size: 85%;
+}
+#footer a {
+	color: #fff;
+}
+
+/************************************************************************************
+CLEARFIX
+*************************************************************************************/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { display: inline-block; }
+.clearfix { display: block; zoom: 1; }
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+
+
+
+
